@@ -1,28 +1,25 @@
 ---
 
 ########## GENERAL SETTINGS ######################################################################################################
-name: tydom2mqtt
-image: fmartinou/tydom2mqtt
-version: 3.3.0
-slug: tydom2mqtt
-description: Deltadore Tydom to MQTT Bridge
+name: easywallbox
+image: ncoiby/easywallbox
+version: 0.0.1
+slug: easywallbox
+description: EasyWallbox to MQTT Bridge
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-url: https://github.com/fmartinou/tydom2mqtt.git
+url: https://github.com/NCoiby/easywallbox.git
 services:
   - mqtt:need
 
 ########## DEFAULT OPTIONS #######################################################################################################
 options:
-  TYDOM_MAC: 001A25XXXXXX
-  TYDOM_IP: 192.168.1.XXX
-  TYDOM_PASSWORD: TYDOM_PASSWORD
-  TYDOM_ALARM_HOME_ZONE: 1
-  TYDOM_ALARM_NIGHT_ZONE: 2
+  WALLBOX_ADDRESS: "00:00:00:00:00"
+  WALLBOX_PIN: "7111"
   MQTT_HOST: homeassistant
   MQTT_USER: ''
   MQTT_PASSWORD: ''
@@ -33,16 +30,10 @@ options:
 ########## OPTIONS SCHEMA ########################################################################################################
 schema:
   LOG_LEVEL: list(DEBUG|INFO|WARNING|ERROR)?
-  TYDOM_MAC: match(^001A25.*$)
-  TYDOM_IP: str?
-  TYDOM_PASSWORD: password
-  TYDOM_ALARM_PIN: str?
-  TYDOM_ALARM_HOME_ZONE: int?
-  TYDOM_ALARM_NIGHT_ZONE: int?
+  WALLBOX_ADDRESS: str?
+  WALLBOX_PIN: str?
   MQTT_HOST: str?
   MQTT_USER: str?
   MQTT_PASSWORD: password?
   MQTT_PORT: port?
   MQTT_SSL: bool?
-  DELTADORE_LOGIN: str?
-  DELTADORE_PASSWORD: password?
