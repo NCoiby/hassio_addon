@@ -1,6 +1,6 @@
 # easyWallbox add-on
 
-![](https://github.com/NCoiby/hassio_addon/blob/eac12fec744b1cb601fe8c587c192997fc186ae1/tydom2mqtt/logo.png)
+![](https://github.com/NCoiby/hassio_addon/blob/4f5d50689379ffb301216fccb940232295d87aa3/tydom2mqtt/logo.png)
 
 This add-on allows you to easily deploy and integrate [easywallbox2MQTT](https://fmartinou.github.io/tydom2mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
 
