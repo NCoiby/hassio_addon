@@ -1,8 +1,8 @@
-# EasyWallbox add-on
+# easyWallbox add-on
 
 ![](https://github.com/fmartinou/tydom2mqtt/raw/master/docs/tydom2mqtt_logo_250.png)
 
-This add-on allows you to easily deploy and integrate [Easywallbox2MQTT](https://fmartinou.github.io/tydom2mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
+This add-on allows you to easily deploy and integrate [easywallbox2MQTT](https://fmartinou.github.io/tydom2mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
 
 ## How to install the add-on?
 
